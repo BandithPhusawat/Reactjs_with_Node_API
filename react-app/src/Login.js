@@ -52,7 +52,7 @@ export default function SignInSide() {
     .then(data => {
         if(data.status === "ok"){
             localStorage.setItem("token", data.token);
-            window.location = '/Album';
+            window.location = '/Products';
             // alert('success');
         }else{
             alert('login fail');
